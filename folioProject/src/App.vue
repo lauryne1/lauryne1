@@ -1,38 +1,29 @@
 <template>
-  <div class="w-1/2 items-center justify-center ml-80">
-    <div class="flex bg-slate-300 items-center justify-center space-x-4 py-2 rounded-xl">
-      <a
-        href="#home"
-        class="text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-        >Accueil</a
-      >
-      <a
-        href="#projects"
-        class="text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-        >Projets</a
-      >
-      <a
-        href="#skills"
-        class="text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-        >Compétences</a
-      >
-      <a
-        href="#experience"
-        class="text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-        >Expérience</a
-      >
-      <a
-        href="#education"
-        class="text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-        >Formation</a
-      >
-      <a
-        href="#contact"
-        class="text-white hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium"
-        >Contact</a
-      >
-    </div>
+  <div>
+    <NavBar class="fixed top-5 w-full z-10"></NavBar>
+  </div>
+  <div>
+    <Home></Home>
+  </div>
+
+  <div>
+    <Projects></Projects>
+  </div>
+  <div>
+    <Skills></Skills>
+  </div>
+  <div>
+    <Contact></Contact>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import NavBar from './components/NavBar.vue';
+import Home from './components/Home.vue';
+import Projects from './components/Projects.vue'
+import Skills from './components/Skills.vue';
+import Contact from './components/Contact.vue'
+
+</script>
+
+<style scoped></style>
