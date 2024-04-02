@@ -2,20 +2,20 @@
   <div>
     <NavBar class="fixed top-5 w-full z-10"></NavBar>
   </div>
-  <div>
+  <div id="home">
     <Home></Home>
   </div>
-
-  <div>
+  <div id="projects">
     <Projects></Projects>
   </div>
-  <div>
+  <div id="skills">
     <Skills></Skills>
   </div>
-  <div>
+  <div id="contact">
     <Contact></Contact>
   </div>
 </template>
+
 
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue';
